@@ -229,7 +229,28 @@
                 </li>
             </ul>
         </li>
-
+        <!-- Certificates -->
+        <li class="<?php if ($page_name == 'certificate' ||
+                $page_name == 'certificate_template')
+                        echo 'opened active';
+        ?> ">
+            <a href="#">
+            <i class="entypo entypo-upload-cloud"></i>
+                <span><?php echo ('Certificates'); ?></span>
+            </a>
+            <ul>
+                <li class="<?php if ($page_name == 'certificate') echo 'active'; ?> ">
+                    <a href="<?php echo base_url(); ?>index.php?admin/certificate">
+                        <span><i class="entypo-dot"></i> <?php echo ('Manage Certificates'); ?></span>
+                    </a>
+                </li>
+                <li class="<?php if ($page_name == 'certificate_template') echo 'active'; ?> ">
+                    <a href="<?php echo base_url(); ?>index.php?admin/certificate_template">
+                        <span><i class="entypo-dot"></i> <?php echo ('Manage Certificate Templates'); ?></span>
+                    </a>
+                </li>
+            </ul>
+        </li>
         <!-- PAYMENT -->
         <li class="<?php if ($page_name == 'invoice') echo 'active'; ?> ">
             <a href="<?php echo base_url(); ?>index.php?admin/invoice">
